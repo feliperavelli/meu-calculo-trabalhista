@@ -2,8 +2,7 @@ import type { Metadata, Viewport } from "next";
 import type { ReactNode } from "react";
 import "./globals.css";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://meucalculotrabalhista.com.br";
-
+const siteUrl = processo.env.NEXT_PUBLIC_SITE_URL ?? "https://www.meucalculo.app";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
