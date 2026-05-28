@@ -60,6 +60,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
+      <head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YWP37TFMJV"></script>
+  <script
+    dangerouslySetInnerHTML={{
+      __html: `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-YWP37TFMJV');
+      `,
+    }}
+  />
+</head>
       <body>{children}</body>
     </html>
   );
