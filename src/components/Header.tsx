@@ -6,9 +6,6 @@ import { Logo } from "@/components/Logo";
 
 const navItems = [
   { label: "Rescisão", href: "#calculadora" },
-  { label: "Férias", href: "#futuro" },
-  { label: "FGTS", href: "#futuro" },
-  { label: "Blog", href: "#faq" },
 ];
 
 export function Header() {
