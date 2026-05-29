@@ -4,7 +4,7 @@ import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { HowItWorks } from "@/components/HowItWorks";
-
+import { AboutRescision } from "@/components/AboutRescision";
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "WebApplication",
@@ -30,12 +30,14 @@ export default function Home() {
         type="application/ld+json"
       />
       <Header />
-      <main>
-        <Hero />
-        <CalculatorSection />
-        <HowItWorks />
-        <FAQ />
-      </main>
+     <main>
+  <Hero />
+  <CalculatorSection />
+  <HowItWorks />
+  <FAQ />
+  <AboutRescision />
+</main>
+ 
       <Footer />
     </>
   );
