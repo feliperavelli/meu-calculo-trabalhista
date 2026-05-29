@@ -37,7 +37,7 @@ export function EmailCapture() {
     console.error(error);
     alert("Erro ao enviar.");
   }
-}
+
 }
   return (
     <article className="rounded-lg border border-brand-200/90 bg-[linear-gradient(145deg,#ffffff_0%,#f6fbfa_58%,#eef8f5_100%)] p-4 shadow-panel transition duration-300 hover:-translate-y-1 hover:border-brand-300 hover:shadow-soft sm:p-6">
