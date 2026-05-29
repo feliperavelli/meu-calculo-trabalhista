@@ -8,14 +8,37 @@ export function EmailCapture() {
   const [email, setEmail] = useState("");
   const [submitted, setSubmitted] = useState(false);
 
-  function handleSubmit(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-    if (!email) {
-      return;
-    }
-    setSubmitted(true);
+  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
+  event.preventDefault();
+
+  if (!email) {
+    return;
   }
 
+  try {
+    await fetch(
+      "https://script.google.com/macros/s/AKfycbwcZGIGLv2I-86CqLuEXZTwWx76OLa6_olc0eb1x_f7kTgwXpi1vQjvCruksyRd2lrtdg/exec",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          email,
+          salario: "",
+          tipoRescisao: "",
+          valorTotal: "",
+        }),
+      }
+    );
+
+    setSubmitted(true);
+  } catch (error) {
+    console.error(error);
+    alert("Erro ao enviar.");
+  }
+}
+}
   return (
     <article className="rounded-lg border border-brand-200/90 bg-[linear-gradient(145deg,#ffffff_0%,#f6fbfa_58%,#eef8f5_100%)] p-4 shadow-panel transition duration-300 hover:-translate-y-1 hover:border-brand-300 hover:shadow-soft sm:p-6">
       <div className="flex items-start gap-3 sm:gap-4">
