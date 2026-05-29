@@ -16,21 +16,18 @@ export function EmailCapture() {
   }
 
   try {
-    await fetch(
-      "https://script.google.com/macros/s/AKfycbwcZGIGLv2I-86CqLuEXZTwWx76OLa6_olc0eb1x_f7kTgwXpi1vQjvCruksyRd2lrtdg/exec",
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          email,
-          salario: "",
-          tipoRescisao: "",
-          valorTotal: "",
-        }),
-      }
-    );
+   await fetch(
+  "https://script.google.com/macros/s/AKfycbwcZGIGLv2I-86CqLuEXZTwWx76OLa6_olc0eb1x_f7kTgwXpi1vQjvCruksyRd2lrtdg/exec",
+  {
+    method: "POST",
+    body: JSON.stringify({
+      email,
+      salario: "",
+      tipoRescisao: "",
+      valorTotal: "",
+    }),
+  }
+);
 
     setSubmitted(true);
   } catch (error) {
