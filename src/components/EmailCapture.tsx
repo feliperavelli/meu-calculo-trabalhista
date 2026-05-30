@@ -4,7 +4,17 @@ import { Mail, Send } from "lucide-react";
 import { useState } from "react";
 import type { FormEvent } from "react";
 
-export function EmailCapture() {
+type EmailCaptureProps = {
+  salary: string;
+  terminationType: string;
+  totalValue: number;
+};
+
+export function EmailCapture({
+  salary,
+  terminationType,
+  totalValue,
+}: EmailCaptureProps) {
   const [email, setEmail] = useState("");
   const [submitted, setSubmitted] = useState(false);
 
