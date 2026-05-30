@@ -22,7 +22,7 @@ export function EmailCapture() {
 
     try {
       const response = await fetch(
-        "https://script.google.com/macros/s/AKfycbwcZGIGLv2I-86CqLuEXZTwWx76OLa6_olc0eb1x_f7kTgwXpi1vQjvCruksyRd2lrtdg/exec",
+    https://script.google.com/macros/s/AKfycbw49ggipbQTELOF8LdB-YcD_dky82GiT8JAW_FhCRPcfvbZbE30u1qDrKs2A22v2BWj/exec
         {
           method: "POST",
           headers: {
