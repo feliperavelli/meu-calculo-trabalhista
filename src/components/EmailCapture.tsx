@@ -11,6 +11,8 @@ export function EmailCapture() {
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
   event.preventDefault();
 
+    console.log("BOTAO CLICADO");
+    
   if (!email) {
     return;
   }
