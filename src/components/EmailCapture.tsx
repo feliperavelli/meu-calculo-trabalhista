@@ -11,18 +11,13 @@ export function EmailCapture() {
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
 
-    console.log("BOTAO CLICADO");
-
     if (!email) {
-      console.log("SEM EMAIL");
       return;
     }
 
-    console.log("ANTES DO FETCH");
-
     try {
       const response = await fetch(
-   "https://script.google.com/macros/s/AKfycbzq3mRSorvORTi38RoaKq0Bnfbd_qxEv9tb9LmwcUKKUVkQitSnt_ay7Ocp4XJNdrONRA/exec",
+        "https://script.google.com/macros/s/AKfycbzq3mRSorvORTi38RoaKq0Bnfbd_qxEv9tb9LmwcUKKUVkQitSnt_ay7Ocp4XJNdrONRA/exec",
         {
           method: "POST",
           headers: {
@@ -37,16 +32,14 @@ export function EmailCapture() {
         }
       );
 
-      console.log("STATUS:", response.status);
-
-      const texto = await response.text();
-      console.log("RESPOSTA:", texto);
-
-      console.log("FETCH CONCLUIDO");
-
-      setSubmitted(true);
+      if (response.ok) {
+        setSubmitted(true);
+        setEmail("");
+      } else {
+        alert("Erro ao enviar.");
+      }
     } catch (error) {
-      console.error("ERRO FETCH", error);
+      console.error(error);
       alert("Erro ao enviar.");
     }
   }
