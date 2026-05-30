@@ -11,7 +11,27 @@ export function EmailCapture() {
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
   event.preventDefault();
 
-    console.log("BOTAO CLICADO");
+ console.log("BOTAO CLICADO");
+
+if (!email) {
+  console.log("SEM EMAIL");
+  return;
+}
+
+console.log("ANTES DO FETCH");
+
+try {
+  await fetch(
+    ...
+  );
+
+  console.log("FETCH CONCLUIDO");
+
+  setSubmitted(true);
+} catch (error) {
+  console.error("ERRO FETCH", error);
+  alert("Erro ao enviar.");
+}
     
   if (!email) {
     return;
