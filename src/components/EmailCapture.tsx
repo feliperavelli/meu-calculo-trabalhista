@@ -33,12 +33,12 @@ export function EmailCapture({
           headers: {
             "Content-Type": "text/plain",
           },
-          body: JSON.stringify({
-            email,
-            salario: "",
-            tipoRescisao: "",
-            valorTotal: "",
-          }),
+        body: JSON.stringify({
+  email,
+  salario: salary,
+  tipoRescisao: terminationType,
+  valorTotal: totalValue,
+}),
         }
       );
 
