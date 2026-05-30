@@ -263,9 +263,13 @@ export function CalculatorSection() {
             </div>
           </form>
 
-          <div className="hidden lg:block">
-            <EmailCapture />
-          </div>
+         <div className="hidden lg:block">
+  <EmailCapture
+    salary={form.salary}
+    terminationType={form.terminationType}
+    totalValue={result?.total ?? 0}
+  />
+</div>
         </div>
 
         <div
@@ -305,9 +309,13 @@ export function CalculatorSection() {
           </div>
         </div>
 
-        <div className="lg:hidden">
-          <EmailCapture />
-        </div>
+       <div className="lg:hidden">
+  <EmailCapture
+    salary={form.salary}
+    terminationType={form.terminationType}
+    totalValue={result?.total ?? 0}
+  />
+</div>
       </div>
     </section>
   );
