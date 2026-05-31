@@ -264,11 +264,17 @@ export function CalculatorSection() {
           </form>
 
          <div className="hidden lg:block">
-  <EmailCapture
-    salary={form.salary}
-    terminationType={form.terminationType}
-    totalValue={result?.total ?? 0}
-  />
+ <EmailCapture
+  salary={form.salary}
+  terminationType={form.terminationType}
+  totalValue={result?.total ?? 0}
+  salaryBalance={result?.salaryBalance ?? 0}
+  vacation={result?.vacation ?? 0}
+  thirteenth={result?.thirteenth ?? 0}
+  fgts={result?.fgts ?? 0}
+  fgtsFine={result?.fgtsFine ?? 0}
+  notice={result?.notice ?? 0}
+/>
 </div>
         </div>
 
@@ -311,10 +317,16 @@ export function CalculatorSection() {
 
        <div className="lg:hidden">
   <EmailCapture
-    salary={form.salary}
-    terminationType={form.terminationType}
-    totalValue={result?.total ?? 0}
-  />
+  salary={form.salary}
+  terminationType={form.terminationType}
+  totalValue={result?.total ?? 0}
+  salaryBalance={result?.salaryBalance ?? 0}
+  vacation={result?.vacation ?? 0}
+  thirteenth={result?.thirteenth ?? 0}
+  fgts={result?.fgts ?? 0}
+  fgtsFine={result?.fgtsFine ?? 0}
+  notice={result?.notice ?? 0}
+/>
 </div>
       </div>
     </section>
