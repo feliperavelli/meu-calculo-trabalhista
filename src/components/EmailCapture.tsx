@@ -26,13 +26,12 @@ export function EmailCapture({
     }
 
     try {
-      const response = await fetch(
-        "https://script.google.com/macros/s/AKfycbzq3mRSorvORTi38RoaKq0Bnfbd_qxEv9tb9LmwcUKKUVkQitSnt_ay7Ocp4XJNdrONRA/exec",
-        {
+     const response = await fetch("/api/send-email",
+            {
           method: "POST",
-          headers: {
-            "Content-Type": "text/plain",
-          },
+        headers: {
+  "Content-Type": "application/json",
+},
         body: JSON.stringify({
   email,
   salario: salary,
