@@ -45,11 +45,18 @@ export function EmailCapture({
         headers: {
   "Content-Type": "application/json",
 },
-        body: JSON.stringify({
+       body: JSON.stringify({
   email,
   salario: salary,
   tipoRescisao: terminationType,
   valorTotal: totalValue,
+
+  saldoSalario: salaryBalance,
+  ferias: vacation,
+  decimoTerceiro: thirteenth,
+  fgts,
+  multaFgts: fgtsFine,
+  avisoPrevio: notice,
 }),
         }
       );
