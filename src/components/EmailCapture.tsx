@@ -21,6 +21,12 @@ export function EmailCapture({
   salary,
   terminationType,
   totalValue,
+  salaryBalance,
+  vacation,
+  thirteenth,
+  fgts,
+  fgtsFine,
+  notice,
 }: EmailCaptureProps) {
   const [email, setEmail] = useState("");
   const [submitted, setSubmitted] = useState(false);
