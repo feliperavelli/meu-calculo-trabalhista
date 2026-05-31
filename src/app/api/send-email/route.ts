@@ -27,8 +27,6 @@ export async function POST(request: Request) {
       <p><strong>Salário:</strong> R$ ${salario}</p>
 <p><strong>Tipo de Rescisão:</strong> ${tipoRescisao}</p>
 
-<hr>
-
 <p><strong>Valor Total:</strong> R$ ${valorTotal}</p>
 <p><strong>Saldo de Salário:</strong> R$ ${saldoSalario}</p>
 <p><strong>Férias + 1/3:</strong> R$ ${ferias}</p>
@@ -36,8 +34,6 @@ export async function POST(request: Request) {
 <p><strong>FGTS:</strong> R$ ${fgts}</p>
 <p><strong>Multa de 40%:</strong> R$ ${multaFgts}</p>
 <p><strong>Aviso Prévio:</strong> R$ ${avisoPrevio}</p>
-
-        <hr>
 
         <p>
           Obrigado por utilizar o Meu Cálculo Trabalhista.
