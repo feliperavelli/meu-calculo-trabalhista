@@ -40,7 +40,29 @@ export async function POST(request: Request) {
         </p>
       `,
     });
-
+    
+await fetch(
+  "https://script.google.com/macros/s/AKfycbzq3mRSorvORTi38RoaKq0Bnfbd_qxEv9tb9LmwcUKKUVkQitSnt_ay7Ocp4XJNdrONRA/exec",
+  {
+    method: "POST",
+    headers: {
+      "Content-Type": "text/plain",
+    },
+    body: JSON.stringify({
+      email,
+      salario,
+      tipoRescisao,
+      valorTotal,
+      saldoSalario,
+      ferias,
+      decimoTerceiro,
+      fgts,
+      multaFgts,
+      avisoPrevio,
+    }),
+  }
+);
+    
     if (error) {
       return Response.json(error, { status: 500 });
     }
