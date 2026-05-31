@@ -24,12 +24,18 @@ export async function POST(request: Request) {
       html: `
         <h2>Resultado da sua simulação</h2>
 
-       <p><strong>Salário:</strong> R$ ${salario}</p>
+      <p><strong>Salário:</strong> R$ ${salario}</p>
 <p><strong>Tipo de Rescisão:</strong> ${tipoRescisao}</p>
 
 <hr>
 
 <p><strong>Valor Total:</strong> R$ ${valorTotal}</p>
+<p><strong>Saldo de Salário:</strong> R$ ${saldoSalario}</p>
+<p><strong>Férias + 1/3:</strong> R$ ${ferias}</p>
+<p><strong>13º Proporcional:</strong> R$ ${decimoTerceiro}</p>
+<p><strong>FGTS:</strong> R$ ${fgts}</p>
+<p><strong>Multa 40%:</strong> R$ ${multaFgts}</p>
+<p><strong>Aviso Prévio:</strong> R$ ${avisoPrevio}</p>
 <p><strong>Saldo de Salário:</strong> R$ ${saldoSalario}</p>
 <p><strong>Férias + 1/3:</strong> R$ ${ferias}</p>
 <p><strong>13º Proporcional:</strong> R$ ${decimoTerceiro}</p>
