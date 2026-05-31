@@ -4,8 +4,18 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(request: Request) {
   try {
-    const { email, salario, tipoRescisao, valorTotal } =
-      await request.json();
+  const {
+  email,
+  salario,
+  tipoRescisao,
+  valorTotal,
+  saldoSalario,
+  ferias,
+  decimoTerceiro,
+  fgts,
+  multaFgts,
+  avisoPrevio,
+} = await request.json();
 
     const { data, error } = await resend.emails.send({
       from: "Meu Cálculo Trabalhista <contato@meucalculo.app>",
