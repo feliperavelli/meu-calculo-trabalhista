@@ -8,6 +8,13 @@ type EmailCaptureProps = {
   salary: string;
   terminationType: string;
   totalValue: number;
+
+  salaryBalance: number;
+  vacation: number;
+  thirteenth: number;
+  fgts: number;
+  fgtsFine: number;
+  notice: number;
 };
 
 export function EmailCapture({
