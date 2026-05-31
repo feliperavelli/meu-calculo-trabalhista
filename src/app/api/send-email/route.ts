@@ -34,12 +34,6 @@ export async function POST(request: Request) {
 <p><strong>Férias + 1/3:</strong> R$ ${ferias}</p>
 <p><strong>13º Proporcional:</strong> R$ ${decimoTerceiro}</p>
 <p><strong>FGTS:</strong> R$ ${fgts}</p>
-<p><strong>Multa 40%:</strong> R$ ${multaFgts}</p>
-<p><strong>Aviso Prévio:</strong> R$ ${avisoPrevio}</p>
-<p><strong>Saldo de Salário:</strong> R$ ${saldoSalario}</p>
-<p><strong>Férias + 1/3:</strong> R$ ${ferias}</p>
-<p><strong>13º Proporcional:</strong> R$ ${decimoTerceiro}</p>
-<p><strong>FGTS:</strong> R$ ${fgts}</p>
 <p><strong>Multa de 40%:</strong> R$ ${multaFgts}</p>
 <p><strong>Aviso Prévio:</strong> R$ ${avisoPrevio}</p>
 
