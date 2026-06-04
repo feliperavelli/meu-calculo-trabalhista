@@ -307,12 +307,23 @@ export function CalculatorSection() {
             ))}
           </div>
 
-          <div className="mt-3 flex items-start justify-center gap-1.5 text-center text-[0.68rem] font-medium text-ink-600 sm:mt-6 sm:gap-2 sm:text-xs">
-            <ShieldCheck aria-hidden="true" className="mt-0.5 h-3.5 w-3.5 shrink-0 text-brand-800 sm:h-4 sm:w-4" />
-            {result
-              ? "Estimativa inclui FGTS apenas quando houver direito de saque."
-              : "Preencha o formulário para simular sua rescisão"}
-          </div>
+         <div className="mt-3 flex items-start justify-center gap-1.5 text-center text-[0.68rem] font-medium text-ink-600 sm:mt-6 sm:gap-2 sm:text-xs">
+  <ShieldCheck
+    aria-hidden="true"
+    className="mt-0.5 h-3.5 w-3.5 shrink-0 text-brand-800 sm:h-4 sm:w-4"
+  />
+  {result
+    ? "Estimativa inclui FGTS apenas quando houver direito de saque."
+    : "Preencha o formulário para simular sua rescisão"}
+</div>
+
+{result && (
+  <p className="mt-3 text-center text-[0.68rem] leading-5 text-ink-500 sm:text-xs">
+    Os valores apresentados são estimativas calculadas com base nas informações
+    fornecidas e na legislação trabalhista vigente. O resultado não substitui
+    análise profissional especializada.
+  </p>
+)}
         </div>
 
        <div className="lg:hidden">
