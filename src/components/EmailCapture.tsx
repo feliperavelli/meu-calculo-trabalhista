@@ -91,10 +91,20 @@ export function EmailCapture({
         </div>
       </div>
 
+            </div>
+
+      <ul className="mt-3 text-sm text-ink-700 space-y-1">
+        <li>✓ Cálculo atualizado pela CLT</li>
+        <li>✓ Inclui FGTS e multa de 40%</li>
+        <li>✓ Considera férias e 13º proporcional</li>
+        <li>✓ Envio gratuito por e-mail</li>
+      </ul>
+
       <form
         className="mt-3 grid gap-2.5 sm:mt-5 sm:gap-3"
         onSubmit={handleSubmit}
       >
+          
         <input
           aria-label="Email"
           className="field-control bg-white"
