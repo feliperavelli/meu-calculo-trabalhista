@@ -32,6 +32,12 @@ export function Footer() {
             </a>
 
             <a
+  className="transition hover:text-brand-700"
+  href="/como-calcular-rescisao"
+>
+  Como calcular rescisão
+</a>
+            <a
               className="transition hover:text-brand-700"
               href="/politica-de-privacidade"
             >
