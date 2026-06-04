@@ -59,8 +59,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <head>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YWP37TFMJV"></script>
+     <head>
+  {/* Google Analytics */}
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-YWP37TFMJV"
+  ></script>
+
   <script
     dangerouslySetInnerHTML={{
       __html: `
@@ -71,6 +76,13 @@ export default function RootLayout({
       `,
     }}
   />
+
+  {/* Google AdSense */}
+  <script
+    async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7100910313897865"
+    crossOrigin="anonymous"
+  ></script>
 </head>
       <body>{children}</body>
     </html>
