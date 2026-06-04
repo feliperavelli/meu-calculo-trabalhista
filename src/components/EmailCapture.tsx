@@ -82,11 +82,11 @@ export function EmailCapture({
 
         <div>
           <h2 className="text-base font-black leading-tight text-ink-950 sm:text-xl">
-            Receba o relatório completo da sua rescisão
+            Receba gratuitamente o relatório detalhado da sua rescisão
           </h2>
 
           <p className="mt-1.5 text-xs leading-5 text-ink-600 sm:mt-2 sm:text-sm sm:leading-6">
-            Envie seu email para receber a versão detalhada quando estiver disponível.
+            Receba por email um resumo completo com todos os cálculos da sua rescisão trabalhista.
           </p>
         </div>
       </div>
