@@ -89,7 +89,6 @@ export function EmailCapture({
             Receba por email um resumo completo com todos os cálculos da sua rescisão trabalhista.
           </p>
         </div>
-      </div>
 
             </div>
 
