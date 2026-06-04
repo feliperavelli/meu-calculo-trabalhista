@@ -92,12 +92,14 @@ export function EmailCapture({
 
             </div>
 
-      <ul className="mt-3 text-sm text-ink-700 space-y-1">
-        <li>✓ Cálculo atualizado pela CLT</li>
-        <li>✓ Inclui FGTS e multa de 40%</li>
-        <li>✓ Considera férias e 13º proporcional</li>
-        <li>✓ Envio gratuito por e-mail</li>
-      </ul>
+     <div className="mt-3 rounded-lg bg-brand-50 p-3">
+  <ul className="space-y-1 text-sm text-ink-700">
+    <li>✓ Cálculo atualizado pela CLT</li>
+    <li>✓ Inclui FGTS e multa de 40%</li>
+    <li>✓ Considera férias e 13º proporcional</li>
+    <li>✓ Envio gratuito por e-mail</li>
+  </ul>
+</div>
 
       <form
         className="mt-3 grid gap-2.5 sm:mt-5 sm:gap-3"
