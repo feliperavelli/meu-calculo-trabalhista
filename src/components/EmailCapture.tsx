@@ -121,7 +121,7 @@ export function EmailCapture({
           type="submit"
         >
           <Send aria-hidden="true" className="h-4 w-4" />
-          Enviar Relatório
+         Receber Relatório Gratuito
         </button>
       </form>
 
