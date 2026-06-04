@@ -220,7 +220,7 @@ export function calculateRescission(form: CalculatorForm): CalculationResult {
   // novo período de férias. Se a rescisão acontece no fechamento desse ciclo,
   // o MVP trata a verba como férias adquiridas, mesmo que "férias vencidas"
   // esteja marcado como "não".
-  const acquiredVacation = form.hasExpiredVacation === "nao" && completeYears > 0 ? fullVacationAmount : 0;
+ const acquiredVacation = 0;
 
   // Férias vencidas: representam um período completo de férias já adquirido e
   // ainda não quitado/gozado. Como o formulário é simples, o MVP considera no
