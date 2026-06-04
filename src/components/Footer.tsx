@@ -12,22 +12,49 @@ export function Footer() {
             </p>
           </div>
 
-          <nav aria-label="Links do rodapé" className="flex flex-wrap gap-3 text-xs font-semibold text-ink-700 sm:gap-5 sm:text-sm">
+          <nav
+            aria-label="Links do rodapé"
+            className="flex flex-wrap gap-3 text-xs font-semibold text-ink-700 sm:gap-5 sm:text-sm"
+          >
             <a className="transition hover:text-brand-700" href="#calculadora">
               Rescisão
             </a>
-            <a className="transition hover:text-brand-700" href="#como-funciona">
+
+            <a
+              className="transition hover:text-brand-700"
+              href="#como-funciona"
+            >
               Como calculamos
             </a>
+
             <a className="transition hover:text-brand-700" href="#faq">
               FAQ
+            </a>
+
+            <a
+              className="transition hover:text-brand-700"
+              href="/politica-de-privacidade"
+            >
+              Política de Privacidade
+            </a>
+
+            <a
+              className="transition hover:text-brand-700"
+              href="/termos-de-uso"
+            >
+              Termos de Uso
             </a>
           </nav>
         </div>
 
         <div className="pt-2 text-center text-[0.66rem] leading-4 text-ink-600 sm:pt-6 sm:text-xs sm:leading-6">
-          <p>© 2026 Meu Cálculo Trabalhista. Todos os direitos reservados.</p>
-          <p className="hidden sm:block">Os cálculos apresentados são estimativas e não substituem a orientação de um profissional.</p>
+          <p>
+            © 2026 Meu Cálculo Trabalhista. Todos os direitos reservados.
+          </p>
+          <p className="hidden sm:block">
+            Os cálculos apresentados são estimativas e não substituem a
+            orientação de um profissional.
+          </p>
         </div>
       </div>
     </footer>
